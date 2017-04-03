@@ -6,7 +6,7 @@
     console.log('Loaded /r/place Cooridination Script');
     $.ajaxSetup({ cache: false });
     var getData = function(action) {
-        $.getJSON('http://146.185.160.73/whitepower.json', function(data) {
+        $.getJSON('https://raw.githubusercontent.com/Eskild1/norge/master/map.json', function(data) {
             action(data);
         });
     },
